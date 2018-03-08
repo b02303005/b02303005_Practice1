@@ -1,6 +1,6 @@
 library(httr)
 
-#爬蟲的頁面：PCHome搜尋"macbook air 13"後的搜尋結果
+#爬蟲的頁面：PCHome搜尋"macbook air 13"後的搜尋結果頁面
 url <- "https://ecshweb.pchome.com.tw/search/v3.3/all/results?q=macbook%20air%2013&page=1&sort=rnk/dc"
 get_url <- GET(url)
 get_url_json = content(get_url)
