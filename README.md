@@ -8,5 +8,5 @@
 <br />
 學習歷程：<br />
 <br />
-  Week1：hw1_answer/n<br />
+  Week1：hw1_answer<br />
   Week2：<br />
