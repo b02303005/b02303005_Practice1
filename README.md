@@ -1,5 +1,5 @@
-# b02303005_Practice1
-# Data Science Programming
+# Repository for Data Science Programming
+
 姓名：曹書誠
 學系：經濟系
 學號：b02303005
