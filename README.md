@@ -9,7 +9,7 @@
 <br />
 學習歷程：<br />
 <br />
-  Week1：
+  Week1：<br />
   學習R的資料型態<br />
   學習R的print函數<br />
   學習R的流程控制<br />
