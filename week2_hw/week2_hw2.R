@@ -9,7 +9,7 @@ do.call(rbind,get_url_json$prods)
 #輸入dataframe
 macbook_air_dataframe <- data.frame(do.call(rbind,get_url_json$prods))
 
-#整理出有興趣的部分（商品名稱、敘述、目前售價、標準定價）
+#整理出有興趣的Column部分（商品名稱、敘述、目前售價、標準定價）
 my_macbook_air_dataframe <- macbook_air_dataframe[,c("name","describe","price","originPrice")]
 
 #顯示我整理後的新dataframe
