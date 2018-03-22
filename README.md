@@ -27,3 +27,7 @@ Week3：<br />
 學習如何使用ggplot2作圖（plot圖、line圖）<br />
 學習如何修改ggplot2圖表的細節（x軸名稱、y軸名稱、圖表名稱）<br />
 完成week3作業<br />
+<br />
+Week4：<br />
+學習抓FB的API<br />
+完成week4作業<br />
