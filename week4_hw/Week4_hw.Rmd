@@ -1,7 +1,7 @@
 ---
-title: "SONY PLAYSATION TAIWAN 臉書分專文字雲"
+title: "SONY PLAYSTATION TAIWAN 臉書粉專文字雲"
 author: "曹書誠"
-date: "2018年3月15日"
+date: "2018年3月22日"
 output: html_document
 ---
 
