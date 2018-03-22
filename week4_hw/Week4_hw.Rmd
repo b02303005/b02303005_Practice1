@@ -1,0 +1,88 @@
+---
+title: "SONY PLAYSATION TAIWAN 臉書分專文字雲"
+author: "曹書誠"
+date: "2018年3月15日"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#library需要的packages
+
+```{r}
+library(httr)
+library(Rfacebook)
+library(devtools)
+library(jiebaR)
+library(wordcloud2)
+library(xml2)
+library(NLP)
+library(rvest)
+library(XML)
+```
+
+#抓下來 PlayStationTaiwan FB紛絲專頁的近50篇貼文
+```{r}
+page.id <- "122191731156908" 
+token="EAACEdEose0cBAIHQGJfmV55flmL6VrY246WvZCR92qihaSRF5jjAG8ZBwOkR5VNyPCfQJPlEiZBZCesQf1RXJZBEQp7XNGwgZC6J9DZAesZBBpmToDdfctTF6b58dPD3EzghSLxvrrCP7yFnN88fZB2YSQLbzDfJOy1ZAJe3kpOMfmD4EDRYsEFzQrmkp4kJOK05ZAkWmKGwSD6uQZDZD"
+page <- getPage(page.id, token=token, n = 50)
+texts<-page$message
+```
+
+#把這五十篇貼文切成詞組，並且整理到一個Dataframe
+```{r}
+Sys.setlocale(category = "LC_ALL", locale = "zh_TW")
+cc = worker()
+text_table<-table(cc[texts])
+text_dataframe<-data.frame(text_table)
+head(text_dataframe[order(text_dataframe$Freq,decreasing = TRUE),])
+```
+
+#洗掉不要的連接詞、介系詞、無意義詞等等
+```{r}
+
+for(i in 1:nrow(text_dataframe)){
+  if( text_dataframe$Var1[i] == "的"){k<-i}
+}
+text_dataframe<-text_dataframe[-k, ]
+
+for(i in 1:nrow(text_dataframe)){
+  if( text_dataframe$Var1[i] == "gl"){k<-i}
+}
+text_dataframe<-text_dataframe[-k, ]
+for(i in 1:nrow(text_dataframe)){
+  if( text_dataframe$Var1[i] == "https"){k<-i}
+}
+text_dataframe<-text_dataframe[-k, ]
+for(i in 1:nrow(text_dataframe)){
+  if( text_dataframe$Var1[i] == "goo"){k<-i}
+}
+text_dataframe<-text_dataframe[-k, ]
+for(i in 1:nrow(text_dataframe)){
+  if( text_dataframe$Var1[i] == "與"){k<-i}
+}
+text_dataframe<-text_dataframe[-k, ]
+for(i in 1:nrow(text_dataframe)){
+  if( text_dataframe$Var1[i] == "等"){k<-i}
+}
+text_dataframe<-text_dataframe[-k, ]
+for(i in 1:nrow(text_dataframe)){
+  if( text_dataframe$Var1[i] == "3"){k<-i}
+}
+text_dataframe<-text_dataframe[-k, ]
+
+
+```
+
+#畫出文字雲
+```{r}
+wordcloud2(text_dataframe)
+```
+
+#print出結語
+```{r}
+print("SONY PS4台灣粉專使用最多的字為PS、Pro，即新推出的PS4 Professional主機機種，可見本粉專正在積極宣傳。")
+print("常見的詞組有Monster、World、Hunter、MHW、魔物、獵人、狩獵、動作、動作遊戲等等，即最近SONY PS4主打的新遊戲Monster Hunter: World 魔物獵人，可見本粉專正在積極宣傳。")
+```
