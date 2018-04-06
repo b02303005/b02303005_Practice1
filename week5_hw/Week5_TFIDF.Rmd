@@ -1,0 +1,105 @@
+---
+title: "經濟部國貿局近十篇聲明之TFIDF Matrix"
+author: "曹書誠"
+date: "2018年4月6日"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(NLP)
+library(tm)
+library(stats)
+library(proxy)
+library(dplyr)
+library(readtext)
+library(jiebaRD)
+library(jiebaR)
+library(slam)
+library(Matrix)
+library(tidytext)
+```
+
+# 1. 取得經濟部國貿局近十篇的文本資料
+
+```{r}
+rawData = readtext(file=c(
+  "/Users/Eric/Documents/R study/Week5/News01.txt",
+  "/Users/Eric/Documents/R study/Week5/News02.txt",
+  "/Users/Eric/Documents/R study/Week5/News03.txt",
+  "/Users/Eric/Documents/R study/Week5/News04.txt",
+  "/Users/Eric/Documents/R study/Week5/News05.txt",
+  "/Users/Eric/Documents/R study/Week5/News06.txt",
+  "/Users/Eric/Documents/R study/Week5/News07.txt",
+  "/Users/Eric/Documents/R study/Week5/News08.txt",
+  "/Users/Eric/Documents/R study/Week5/News09.txt",
+  "/Users/Eric/Documents/R study/Week5/News10.txt"
+  ))
+docs = Corpus(VectorSource(rawData$text))
+```
+
+# 2. 清洗文本
+
+```{r}
+toSpace <- content_transformer(function(x, pattern) {
+  return (gsub(pattern, " ", x))
+})
+docs <- tm_map(docs, removePunctuation)
+docs <- tm_map(docs, removeNumbers)
+docs <- tm_map(docs, stripWhitespace)
+docs <- tm_map(docs, toSpace, "[a-zA-Z]")
+```
+
+# 3. 切詞組
+
+```{r}
+keywords = c("CPTPP")
+mixseg = worker()
+keys = as.matrix(keywords)
+new_user_word(mixseg, keys)
+
+jieba_tokenizer = function(d){
+  unlist(segment(d[[1]], mixseg))
+}
+seg = lapply(docs, jieba_tokenizer)
+freqFrame = as.data.frame(table(unlist(seg)))
+
+d.corpus <- Corpus(VectorSource(seg))
+tdm <- TermDocumentMatrix(d.corpus)
+print( tf <- as.matrix(tdm) )
+DF <- tidy(tf)
+```
+
+# 4. 計算TFIDF
+
+```{r}
+N = tdm$ncol
+tf <- apply(tdm, 2, sum)
+idfCal <- function(word_doc)
+{ 
+  log2( N / nnzero(word_doc) ) 
+}
+idf <- apply(tdm, 1, idfCal)
+
+doc.tfidf <- as.matrix(tdm)
+for(x in 1:nrow(tdm))
+{
+  for(y in 1:ncol(tdm))
+  {
+    doc.tfidf[x,y] <- (doc.tfidf[x,y] / tf[y]) * idf[x]
+  }
+}
+
+findZeroId = as.matrix(apply(doc.tfidf, 1, sum))
+tfidfnn = doc.tfidf[-which(findZeroId == 0),]
+```
+
+# 5. 寫入csv檔
+
+```{r}
+write.csv(tfidfnn, "/Users/Eric/Documents/R study/Week5/show.csv",fileEncoding ="UTF-8")
+```
+
