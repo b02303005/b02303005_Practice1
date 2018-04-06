@@ -1,0 +1,65 @@
+---
+title: "經濟部國貿局近十篇聲明分析"
+author: "曹書誠"
+date: "2018年4月6日"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(NLP)
+library(readtext)
+library(tm)
+library(jiebaR)
+library(jiebaRD)
+```
+
+# 1. 取得經濟部國貿局近十篇的文本資料
+
+```{r}
+page <- readtext(file=c(
+  "/Users/Eric/Documents/R study/Week5/News01.txt",
+  "/Users/Eric/Documents/R study/Week5/News02.txt",
+  "/Users/Eric/Documents/R study/Week5/News03.txt",
+  "/Users/Eric/Documents/R study/Week5/News04.txt",
+  "/Users/Eric/Documents/R study/Week5/News05.txt",
+  "/Users/Eric/Documents/R study/Week5/News06.txt",
+  "/Users/Eric/Documents/R study/Week5/News07.txt",
+  "/Users/Eric/Documents/R study/Week5/News08.txt",
+  "/Users/Eric/Documents/R study/Week5/News09.txt",
+  "/Users/Eric/Documents/R study/Week5/News10.txt"
+))
+docs <- Corpus(VectorSource(page$text))
+docnum = length(page)
+```
+
+# 2. tokenlizing
+
+```{r}
+mixseg = worker()
+Alltoken = list()
+Allfreq = list()
+for( c in 1:docnum )
+{
+  token = list(jiebaR::segment(docs[[c]]$content, mixseg))
+  Alltoken = append(Alltoken, token)
+  freq = list(as.data.frame(table(token)))
+  Allfreq = append(Allfreq, freq)
+}
+```
+
+
+# 3. 整合至TermDocumentMatrix
+```{r}
+NewDataFrame = merge(Allfreq[[1]], Allfreq[[2]], by="token")
+```
+
+# 4. 印出結果
+
+```{r}
+print(NewDataFrame)
+```
+
