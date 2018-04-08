@@ -31,3 +31,9 @@ Week3：<br />
 Week4：<br />
 學習抓FB的API<br />
 完成week4作業<br />
+<br />
+Week5:<br />
+學習什麼是scv檔<br />
+完成Week5作業<br />
+整理前五週的作業<br />
+<br />
