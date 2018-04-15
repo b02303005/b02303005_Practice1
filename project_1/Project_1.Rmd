@@ -1,0 +1,134 @@
+---
+title: " 羅密歐與茱麗葉關鍵字分析"
+author: "曹書誠"
+date: "2018年4月13日"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r }
+library(NLP)
+library(tm)
+library(stats)
+library(proxy)
+library(dplyr)
+library(readtext)
+library(jiebaRD)
+library(jiebaR)
+library(slam)
+library(Matrix)
+library(tidytext)
+library(ggplot2)
+library(gridExtra)
+```
+
+#前言：
+<br>
+羅密歐與茱麗葉是起承轉合明確、人物設定鮮明的文學經典，且莎氏比亞的英語用字選詞，顯著地影響了近代英語。<br>
+<br>
+本project把羅密歐與茱蔍葉的文本，以幕數分割，先切詞組觀察有哪些高頻字詞，再從中挑出來八個詞做圖表分析。<br>
+<br>
+
+
+#讀入羅密歐與茱麗葉的文本（共一到五幕）
+
+```{r }
+
+rawData = readtext(file=c(
+  "/Users/Eric/Documents/R study/Project_1/Act_1.txt",
+  "/Users/Eric/Documents/R study/Project_1/Act_2.txt",
+  "/Users/Eric/Documents/R study/Project_1/Act_3.txt",
+  "/Users/Eric/Documents/R study/Project_1/Act_4.txt",
+  "/Users/Eric/Documents/R study/Project_1/Act_5.txt"
+))
+docs = Corpus(VectorSource(rawData$text))
+
+```
+
+#資料清洗
+
+```{r }
+
+toSpace <- content_transformer(function(x, pattern) {
+  return (gsub(pattern, " ", x))
+})
+docs <- tm_map(docs, removePunctuation)
+docs <- tm_map(docs, removeNumbers)
+docs <- tm_map(docs, stripWhitespace)
+
+```
+
+#切詞組，觀察哪些高頻字是有趣的
+
+```{r }
+
+keywords = c(" ")
+mixseg = worker()
+keys = as.matrix(keywords)
+new_user_word(mixseg, keys)
+
+jieba_tokenizer = function(d){
+  unlist(segment(d[[1]], mixseg))
+}
+seg = lapply(docs, jieba_tokenizer)
+freqFrame = as.data.frame(table(unlist(seg)))
+
+d.corpus <- Corpus(VectorSource(seg))
+tdm <- TermDocumentMatrix(d.corpus)
+print( tf <- as.matrix(tdm) )
+DF <- tidy(tf)
+
+```
+
+#用csv檔選出八個有興趣的關鍵字
+<br>
+我選出的八個有趣的關鍵字為love, death, night, heaven, romeo, juilet, benvolio, mercutio，<br>
+選完後，再把選好的字的相關martrix讀入回來。<br>
+<br>
+```{r }
+
+write.csv(DF, "/Users/Eric/Documents/R study/Project_1//keywords_raw.csv")
+DF_sec<-read.table("/Users/Eric/Documents/R study/Project_1//keywords_sec.csv",header=TRUE, stringsAsFactors = FALSE, sep=",")
+
+print(DF_sec)
+```
+
+#製成圖表
+
+```{r }
+
+g1=ggplot(data=DF_sec,aes(x=1:5,y=love)) +geom_area(fill=2)+xlab("Act")+ylab("Frequency")+ggtitle("Love")
+g2=ggplot(data=DF_sec,aes(x=1:5,y=death)) +geom_area(fill=3)+xlab("Act")+ylab("Frequency")+ggtitle("Death")
+g3=ggplot(data=DF_sec,aes(x=1:5,y=night)) +geom_area(fill=4)+xlab("Act")+ylab("Frequency")+ggtitle("Night")
+g4=ggplot(data=DF_sec,aes(x=1:5,y=heaven)) +geom_area(fill=5)+xlab("Act")+ylab("Frequency")+ggtitle("Heaven")
+g5=ggplot(data=DF_sec,aes(x=1:5,y=romeo)) +geom_area(fill=6)+xlab("Act")+ylab("Frequency")+ggtitle("Romeo")
+g6=ggplot(data=DF_sec,aes(x=1:5,y=juliet)) +geom_area(fill=4)+xlab("Act")+ylab("Frequency")+ggtitle("Juliet")
+g7=ggplot(data=DF_sec,aes(x=1:5,y=benvolio)) +geom_area(fill=8)+xlab("Act")+ylab("Frequency")+ggtitle("Benvolio")
+g8=ggplot(data=DF_sec,aes(x=1:5,y=mercutio)) +geom_area(fill=9)+xlab("Act")+ylab("Frequency")+ggtitle("Mercutio")
+
+
+finalchart=grid.arrange(g1,g5,g2,g6,g3,g7,g4,g8,nrow=4,ncol=2)
+print(finalchart)
+
+```
+
+#結語
+<br>
+整理出圖表，左邊column為四個名詞（Love、Death、Night、Heaven），右邊為四個人名（羅密歐、茱麗葉、羅密歐的表哥、茱麗葉的表哥）。<br>
+<br>
+首先觀察名詞：<br>
+一、Love在第二幕兩位主角初次相見時，使用次數達到高峰，但後來隨著劇情白熱化，使用次數其實逐漸下降，和一般認知的，Love使用次數會隨劇情發展而變多，並不相同。<br>
+二、Death的兩次使用高峰為：第三幕兩大家族互殺（導致羅密歐的表哥、茱麗葉的表哥死亡），以及結尾兩大主角死亡。<br>
+三、Night的使用次數在結尾時突然大幅減少，顯示了前幾幕的場景都為晚上，較為灰暗，而結尾的Good Ending時則不使用晚上場景，代表兩大家族大合解的曙光。<br>
+四、Heaven的使用次數在羅密歐、茱麗葉兩人被迫分離的第三幕達到高峰，代表作者在此時大量暗示兩人最終只能在天堂相聚。<br>
+<br>
+接著觀察人名：<br>
+一、羅密歐、茱麗葉：兩人在第五幕死後還有大量被提起，代表兩人的死並不是故事的結束。<br>
+二、羅密歐的表哥、茱麗葉的表哥：兩人在第三幕死亡後，就一次都沒有被他人提起過了...明明是兩大家族各自的第一男配角的，這個發現令我感到驚奇。<br>
+<br>
+<br>
+<br>
