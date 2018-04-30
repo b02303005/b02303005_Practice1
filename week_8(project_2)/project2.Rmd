@@ -1,0 +1,164 @@
+---
+title: " Survival Prediction for Titanic"
+author: "曹書誠"
+date: "2018年4月30日"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#讀入用來嘗試預測方法的table
+
+```{r }
+library(readtext)
+rawData = readtext(file=c(
+  "/Users/Eric/Documents/R study/Project_2/table.xlsx"))
+```
+
+#把性別換成一組dummy variable
+
+```{r }
+for(i in 1:1000){
+  if (rawData$sex[i]=="female"){
+    rawData$sex[i]<-1}
+  else if (rawData$sex[i]=="male"){
+    rawData$sex[i]<-0}
+}
+```
+
+#把embarked的三組S,C,Q類別，去除NA後，換成三組dummy variable
+
+```{r }
+
+for (i in 1:1000){
+  while(is.na(rawData$embarked[i])==TRUE){
+    rawData$embarked[i]<-0}
+}
+
+for(i in 1:1000){
+  if (rawData$embarked[i]=="S"){
+    rawData$is.embarked.s[i]<-1}
+  else if (rawData$embarked[i]!="S"){
+    rawData$is.embarked.s[i]<-0}
+}
+
+for(i in 1:1000){
+  if (rawData$embarked[i]=="C"){
+    rawData$is.embarked.c[i]<-1}
+  else if (rawData$embarked[i]!="C"){
+    rawData$is.embarked.c[i]<-0}
+}
+
+for(i in 1:1000){
+  if (rawData$embarked[i]=="Q"){
+    rawData$is.embarked.q[i]<-1}
+  else if (rawData$embarked[i]!="Q"){
+    rawData$is.embarked.q[i]<-0}
+}
+```
+
+#輸出成一個整理好的csv檔
+
+```{r }
+write.table(rawData,file="/Users/Eric/Documents/R study/Project_2/table2.csv",row.names=FALSE,sep=",")
+
+```
+
+#接著對question table做一樣的整理，並輸出整理好的csv檔
+
+```{r }
+
+
+questionData = readtext(file=c(
+  "/Users/Eric/Documents/R study/Project_2/question.xlsx"))
+
+for (i in 1:309){
+  if (questionData$sex[i]=="female"){
+    questionData$sex[i]<-1}
+  else if (questionData$sex[i]=="male"){
+    questionData$sex[i]<-0}
+}
+
+for (i in 1:309){
+  while(is.na(questionData$embarked[i])==TRUE){
+    questionData$embarked[i]<-0}
+}
+
+for (i in 1:309){
+  if (questionData$embarked[i]=="S"){
+    questionData$is.embarked.s[i]<-1}
+  else if (questionData$embarked[i]!="S"){
+    questionData$is.embarked.s[i]<-0}
+}
+
+for (i in 1:309){
+  if (questionData$embarked[i]=="C"){
+    questionData$is.embarked.c[i]<-1}
+  else if (questionData$embarked[i]!="C"){
+    questionData$is.embarked.c[i]<-0}
+}
+
+for (i in 1:309){
+  if (questionData$embarked[i]=="Q"){
+    questionData$is.embarked.q[i]<-1}
+  else if (questionData$embarked[i]!="Q"){
+    questionData$is.embarked.q[i]<-0}
+}
+
+write.table(questionData,file="/Users/Eric/Documents/R study/Project_2/question2.csv",row.names=FALSE,sep=",")
+
+
+```
+
+#使用stata做線性迴歸
+<br/>
+reg survived pclass sex parch isembarkeds isembarkedc isembarkedq homedest<br/>
+<br/>
+<br/>
+      Source |       SS           df       MS      Number of obs   =       861<br/>
+-------------+----------------------------------   F(7, 853)       =     86.23<br/>
+       Model |  88.0193617         7  12.5741945   Prob > F        =    0.0000<br/>
+    Residual |   124.38482       853  .145820421   R-squared       =    0.4144<br/>
+-------------+----------------------------------   Adj R-squared   =    0.4096<br/>
+       Total |  212.404181       860  .246981606   Root MSE        =    .38186<br/>
+<br/>
+    survived |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]<br/>
+-------------+----------------------------------------------------------------<br/>
+      pclass |   .0078325   .0279321     0.28   0.779    -.0469911    .0626562<br/>
+         sex |   .5265341    .028084    18.75   0.000     .4714122    .5816561<br/>
+       parch |  -.0400711   .0196167    -2.04   0.041    -.0785738   -.0015684<br/>
+ isembarkeds |  -.1793399   .2719179    -0.66   0.510    -.7130465    .3543666<br/>
+ isembarkedc |  -.1055547    .272388    -0.39   0.698     -.640184    .4290746<br/>
+ isembarkedq |  -.2863386   .2783137    -1.03   0.304    -.8325986    .2599214<br/>
+    homedest |    .701942   .1245974     5.63   0.000     .4573885    .9464955<br/>
+       _cons |   .0980477   .2849471     0.34   0.731    -.4612318    .6573273<br/>
+<br/>
+得知原始資料中對survived有顯著影響的變數為sex,parch,isembarkedq。（由於age在question中NA值過多，故不使用）。其中pclass和homedest有共線性問題。<br/>
+<br/><br/>
+#用stata對原始資料做sex,age,isembarkedq做線性迴歸後，把得到的係數拿來做questionData的預測。得到新的table，並讀入。
+
+```{r }
+
+questionRegressioned = readtext(file=c(
+  "/Users/Eric/Documents/R study/Project_2/questionRegressioned.xlsx"))
+
+```
+
+#找到預測的survival的連續統的mean值，並把大於mean值的視為生還。
+
+```{r }
+for (i in 1:309){
+  if (questionRegressioned$survived2[i]>mean(questionRegressioned$survived2)){
+    questionRegressioned$survived[i]<-1}
+  else if (questionRegressioned$survived2[i]<mean(questionRegressioned$survived2)){
+    questionRegressioned$survived[i]<-0}
+}
+```
+
+#得到預測結論，寫入csv檔
+
+```{r }
+write.table(questionRegressioned,file="/Users/Eric/Documents/R study/Project_2/my_prediction.csv",row.names=FALSE,sep=",")
+```

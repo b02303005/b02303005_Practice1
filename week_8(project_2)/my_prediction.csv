@@ -1,0 +1,310 @@
+pclass,survived,name,sex,age,sibsp,parch,ticket,fare,cabin,embarked,boat,body,homedest,isembarkeds,isembarkedc,isembarkedq,survived2
+3,0,"McCormack, Mr. Thomas Joseph",0,NA,0,0,367228,7.75,NA,Q,NA,NA,NA,0,0,1,0.0120427
+3,1,"McCoy, Miss. Agnes",1,NA,2,0,367226,23.25,NA,Q,16,NA,NA,0,0,1,0.5521883
+3,1,"McCoy, Miss. Alicia",1,NA,2,0,367226,23.25,NA,Q,16,NA,NA,0,0,1,0.5521883
+3,0,"McCoy, Mr. Bernard",0,NA,2,0,367226,23.25,NA,Q,16,NA,NA,0,0,1,0.0120427
+3,1,"McDermott, Miss. Brigdet Delia",1,NA,0,0,330932,7.7875,NA,Q,13,NA,NA,0,0,1,0.5521883
+3,0,"McEvoy, Mr. Michael",0,NA,0,0,36568,15.5,NA,Q,NA,NA,NA,0,0,1,0.0120427
+3,1,"McGovern, Miss. Mary",1,NA,0,0,330931,7.8792,NA,Q,13,NA,NA,0,0,1,0.5521883
+3,1,"McGowan, Miss. Anna \Annie\\\""""",1,15,0,0,330923,8.0292,NA,Q,NA,NA,NA,0,0,1,0.5521883
+3,1,"McGowan, Miss. Katherine",1,35,0,0,9232,7.75,NA,Q,NA,NA,NA,0,0,1,0.5521883
+3,0,"McMahon, Mr. Martin",0,NA,0,0,370372,7.75,NA,Q,NA,NA,NA,0,0,1,0.0120427
+3,0,"McNamee, Mr. Neal",0,24,1,0,376566,16.1,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,1,"McNamee, Mrs. Neal (Eileen O'Leary)",1,19,1,0,376566,16.1,NA,S,NA,53,NA,1,0,0,0.6418404
+3,1,"McNeill, Miss. Bridget",1,NA,0,0,370368,7.75,NA,Q,NA,NA,NA,0,0,1,0.5521883
+3,1,"Meanwell, Miss. (Marion Ogden)",1,NA,0,0,SOTON/O.Q. 392087,8.05,NA,S,NA,NA,NA,1,0,0,0.6418404
+3,1,"Meek, Mrs. Thomas (Annie Louise Rowley)",1,NA,0,0,343095,8.05,NA,S,NA,NA,NA,1,0,0,0.6418404
+3,0,"Meo, Mr. Alfonzo",0,55.5,0,0,A.5. 11206,8.05,NA,S,NA,201,NA,1,0,0,0.1016947
+3,0,"Mernagh, Mr. Robert",0,NA,0,0,368703,7.75,NA,Q,NA,NA,NA,0,0,1,0.0120427
+3,0,"Midtsjo, Mr. Karl Albert",0,21,0,0,345501,7.775,NA,S,15,NA,NA,1,0,0,0.1016947
+3,0,"Miles, Mr. Frank",0,NA,0,0,359306,8.05,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Mineff, Mr. Ivan",0,24,0,0,349233,7.8958,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Minkoff, Mr. Lazar",0,21,0,0,349211,7.8958,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Mionoff, Mr. Stoytcho",0,28,0,0,349207,7.8958,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Mitkoff, Mr. Mito",0,NA,0,0,349221,7.8958,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,1,"Mockler, Miss. Helen Mary \Ellie\\\""""",1,NA,0,0,330980,7.8792,NA,Q,16,NA,NA,0,0,1,0.5521883
+3,0,"Moen, Mr. Sigurd Hansen",0,25,0,0,348123,7.65,F G73,S,NA,309,NA,1,0,0,0.1016947
+3,0,"Moor, Master. Meier",0,6,0,1,392096,12.475,E121,S,14,NA,NA,1,0,0,0.1110221
+3,1,"Moor, Mrs. (Beila)",1,27,0,1,392096,12.475,E121,S,14,NA,NA,1,0,0,0.6511678
+3,0,"Moore, Mr. Leonard Charles",0,NA,0,0,A4. 54510,8.05,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,1,"Moran, Miss. Bertha",1,NA,1,0,371110,24.15,NA,Q,16,NA,NA,0,0,1,0.5521883
+3,0,"Moran, Mr. Daniel J",0,NA,1,0,371110,24.15,NA,Q,NA,NA,NA,0,0,1,0.0120427
+3,0,"Moran, Mr. James",0,NA,0,0,330877,8.4583,NA,Q,NA,NA,NA,0,0,1,0.0120427
+3,0,"Morley, Mr. William",0,34,0,0,364506,8.05,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Morrow, Mr. Thomas Rowan",0,NA,0,0,372622,7.75,NA,Q,NA,NA,NA,0,0,1,0.0120427
+3,0,"Moss, Mr. Albert Johan",0,NA,0,0,312991,7.775,NA,S,B,NA,NA,1,0,0,0.1016947
+3,0,"Moubarek, Master. Gerios",0,NA,1,1,2661,15.2458,NA,C,C,NA,NA,0,1,0,0.1110221
+3,0,"Moubarek, Master. Halim Gonios (\William George\\)\""""",0,NA,1,1,2661,15.2458,NA,C,C,NA,NA,0,1,0,0.1110221
+3,1,"Moubarek, Mrs. George (Omine \Amenia\\ Alexander)\""""",1,NA,0,2,2661,15.2458,NA,C,C,NA,NA,0,1,0,0.6604952
+3,1,"Moussa, Mrs. (Mantoura Boulos)",1,NA,0,0,2626,7.2292,NA,C,NA,NA,NA,0,1,0,0.6418404
+3,0,"Moutal, Mr. Rahamin Haim",0,NA,0,0,374746,8.05,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,1,"Mullens, Miss. Katherine \Katie\\\""""",1,NA,0,0,35852,7.7333,NA,Q,16,NA,NA,0,0,1,0.5521883
+3,1,"Mulvihill, Miss. Bertha E",1,24,0,0,382653,7.75,NA,Q,15,NA,NA,0,0,1,0.5521883
+3,0,"Murdlin, Mr. Joseph",0,NA,0,0,A./5. 3235,8.05,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,1,"Murphy, Miss. Katherine \Kate\\\""""",1,NA,1,0,367230,15.5,NA,Q,16,NA,NA,0,0,1,0.5521883
+3,1,"Murphy, Miss. Margaret Jane",1,NA,1,0,367230,15.5,NA,Q,16,NA,NA,0,0,1,0.5521883
+3,1,"Murphy, Miss. Nora",1,NA,0,0,36568,15.5,NA,Q,16,NA,NA,0,0,1,0.5521883
+3,0,"Myhrman, Mr. Pehr Fabian Oliver Malkolm",0,18,0,0,347078,7.75,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Naidenoff, Mr. Penko",0,22,0,0,349206,7.8958,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,1,"Najib, Miss. Adele Kiamie \Jane\\\""""",1,15,0,0,2667,7.225,NA,C,C,NA,NA,0,1,0,0.6418404
+3,1,"Nakid, Miss. Maria (\Mary\\)\""""",1,1,0,2,2653,15.7417,NA,C,C,NA,NA,0,1,0,0.6604952
+3,0,"Nakid, Mr. Sahid",0,20,1,1,2653,15.7417,NA,C,C,NA,NA,0,1,0,0.1110221
+3,1,"Nakid, Mrs. Said (Waika \Mary\\ Mowad)\""""",1,19,1,1,2653,15.7417,NA,C,C,NA,NA,0,1,0,0.6511678
+3,0,"Nancarrow, Mr. William Henry",0,33,0,0,A./5. 3338,8.05,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Nankoff, Mr. Minko",0,NA,0,0,349218,7.8958,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Nasr, Mr. Mustafa",0,NA,0,0,2652,7.2292,NA,C,NA,NA,NA,0,1,0,0.1016947
+3,1,"Naughton, Miss. Hannah",1,NA,0,0,365237,7.75,NA,Q,NA,NA,NA,0,0,1,0.5521883
+3,0,"Nenkoff, Mr. Christo",0,NA,0,0,349234,7.8958,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Nicola-Yarred, Master. Elias",0,12,1,0,2651,11.2417,NA,C,C,NA,NA,0,1,0,0.1016947
+3,1,"Nicola-Yarred, Miss. Jamila",1,14,1,0,2651,11.2417,NA,C,C,NA,NA,0,1,0,0.6418404
+3,1,"Nieminen, Miss. Manta Josefina",1,29,0,0,3101297,7.925,NA,S,NA,NA,NA,1,0,0,0.6418404
+3,0,"Niklasson, Mr. Samuel",0,28,0,0,363611,8.05,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,1,"Nilsson, Miss. Berta Olivia",1,18,0,0,347066,7.775,NA,S,D,NA,NA,1,0,0,0.6418404
+3,1,"Nilsson, Miss. Helmina Josefina",1,26,0,0,347470,7.8542,NA,S,13,NA,NA,1,0,0,0.6418404
+3,0,"Nilsson, Mr. August Ferdinand",0,21,0,0,350410,7.8542,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Nirva, Mr. Iisakki Antino Aijo",0,41,0,0,SOTON/O2 3101272,7.125,NA,S,NA,NA,"Finland Sudbury, ON",1,0,0,0.1016947
+3,0,"Niskanen, Mr. Juha",0,39,0,0,STON/O 2. 3101289,7.925,NA,S,9,NA,NA,1,0,0,0.1016947
+3,0,"Nosworthy, Mr. Richard Cater",0,21,0,0,A/4. 39886,7.8,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Novel, Mr. Mansouer",0,28.5,0,0,2697,7.2292,NA,C,NA,181,NA,0,1,0,0.1016947
+3,1,"Nysten, Miss. Anna Sofia",1,22,0,0,347081,7.75,NA,S,13,NA,NA,1,0,0,0.6418404
+3,0,"Nysveen, Mr. Johan Hansen",0,61,0,0,345364,6.2375,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"O'Brien, Mr. Thomas",0,NA,1,0,370365,15.5,NA,Q,NA,NA,NA,0,0,1,0.0120427
+3,0,"O'Brien, Mr. Timothy",0,NA,0,0,330979,7.8292,NA,Q,NA,NA,NA,0,0,1,0.0120427
+3,1,"O'Brien, Mrs. Thomas (Johanna \Hannah\\ Godfrey)\""""",1,NA,1,0,370365,15.5,NA,Q,NA,NA,NA,0,0,1,0.5521883
+3,0,"O'Connell, Mr. Patrick D",0,NA,0,0,334912,7.7333,NA,Q,NA,NA,NA,0,0,1,0.0120427
+3,0,"O'Connor, Mr. Maurice",0,NA,0,0,371060,7.75,NA,Q,NA,NA,NA,0,0,1,0.0120427
+3,0,"O'Connor, Mr. Patrick",0,NA,0,0,366713,7.75,NA,Q,NA,NA,NA,0,0,1,0.0120427
+3,0,"Odahl, Mr. Nils Martin",0,23,0,0,7267,9.225,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,1,"O'Donoghue, Ms. Bridget",1,NA,0,0,364856,7.75,NA,Q,NA,NA,NA,0,0,1,0.5521883
+3,1,"O'Driscoll, Miss. Bridget",1,NA,0,0,14311,7.75,NA,Q,D,NA,NA,0,0,1,0.5521883
+3,1,"O'Dwyer, Miss. Ellen \Nellie\\\""""",1,NA,0,0,330959,7.8792,NA,Q,NA,NA,NA,0,0,1,0.5521883
+3,1,"Ohman, Miss. Velin",1,22,0,0,347085,7.775,NA,S,C,NA,NA,1,0,0,0.6418404
+3,0,"O'Keefe, Mr. Patrick",0,NA,0,0,368402,7.75,NA,Q,B,NA,NA,0,0,1,0.0120427
+3,1,"O'Leary, Miss. Hanora \Norah\\\""""",1,NA,0,0,330919,7.8292,NA,Q,13,NA,NA,0,0,1,0.5521883
+3,0,"Olsen, Master. Artur Karl",0,9,0,1,C 17368,3.1708,NA,S,13,NA,NA,1,0,0,0.1110221
+3,0,"Olsen, Mr. Henry Margido",0,28,0,0,C 4001,22.525,NA,S,NA,173,NA,1,0,0,0.1016947
+3,0,"Olsen, Mr. Karl Siegwart Andreas",0,42,0,1,4579,8.4042,NA,S,NA,NA,NA,1,0,0,0.1110221
+3,0,"Olsen, Mr. Ole Martin",0,NA,0,0,Fa 265302,7.3125,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,1,"Olsson, Miss. Elina",1,31,0,0,350407,7.8542,NA,S,NA,NA,NA,1,0,0,0.6418404
+3,0,"Olsson, Mr. Nils Johan Goransson",0,28,0,0,347464,7.8542,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Olsson, Mr. Oscar Wilhelm",0,32,0,0,347079,7.775,NA,S,A,NA,NA,1,0,0,0.1016947
+3,0,"Olsvigen, Mr. Thor Anderson",0,20,0,0,6563,9.225,NA,S,NA,89,"Oslo, Norway Cameron, WI",1,0,0,0.1016947
+3,1,"Oreskovic, Miss. Jelka",1,23,0,0,315085,8.6625,NA,S,NA,NA,NA,1,0,0,0.6418404
+3,1,"Oreskovic, Miss. Marija",1,20,0,0,315096,8.6625,NA,S,NA,NA,NA,1,0,0,0.6418404
+3,0,"Oreskovic, Mr. Luka",0,20,0,0,315094,8.6625,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Osen, Mr. Olaf Elon",0,16,0,0,7534,9.2167,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,1,"Osman, Mrs. Mara",1,31,0,0,349244,8.6833,NA,S,NA,NA,NA,1,0,0,0.6418404
+3,1,"O'Sullivan, Miss. Bridget Mary",1,NA,0,0,330909,7.6292,NA,Q,NA,NA,NA,0,0,1,0.5521883
+3,0,"Palsson, Master. Gosta Leonard",0,2,3,1,349909,21.075,NA,S,NA,4,NA,1,0,0,0.1110221
+3,0,"Palsson, Master. Paul Folke",0,6,3,1,349909,21.075,NA,S,NA,NA,NA,1,0,0,0.1110221
+3,1,"Palsson, Miss. Stina Viola",1,3,3,1,349909,21.075,NA,S,NA,NA,NA,1,0,0,0.6511678
+3,1,"Palsson, Miss. Torborg Danira",1,8,3,1,349909,21.075,NA,S,NA,NA,NA,1,0,0,0.6511678
+3,1,"Palsson, Mrs. Nils (Alma Cornelia Berglund)",1,29,0,4,349909,21.075,NA,S,NA,206,NA,1,0,0,0.67915
+3,0,"Panula, Master. Eino Viljami",0,1,4,1,3101295,39.6875,NA,S,NA,NA,NA,1,0,0,0.1110221
+3,0,"Panula, Master. Juha Niilo",0,7,4,1,3101295,39.6875,NA,S,NA,NA,NA,1,0,0,0.1110221
+3,0,"Panula, Master. Urho Abraham",0,2,4,1,3101295,39.6875,NA,S,NA,NA,NA,1,0,0,0.1110221
+3,0,"Panula, Mr. Ernesti Arvid",0,16,4,1,3101295,39.6875,NA,S,NA,NA,NA,1,0,0,0.1110221
+3,0,"Panula, Mr. Jaako Arnold",0,14,4,1,3101295,39.6875,NA,S,NA,NA,NA,1,0,0,0.1110221
+3,1,"Panula, Mrs. Juha (Maria Emilia Ojala)",1,41,0,5,3101295,39.6875,NA,S,NA,NA,NA,1,0,0,0.6884774
+3,0,"Pasic, Mr. Jakob",0,21,0,0,315097,8.6625,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Patchett, Mr. George",0,19,0,0,358585,14.5,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Paulner, Mr. Uscher",0,NA,0,0,3411,8.7125,NA,C,NA,NA,NA,0,1,0,0.1016947
+3,0,"Pavlovic, Mr. Stefo",0,32,0,0,349242,7.8958,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Peacock, Master. Alfred Edward",0,0.75,1,1,SOTON/O.Q. 3101315,13.775,NA,S,NA,NA,NA,1,0,0,0.1110221
+3,1,"Peacock, Miss. Treasteall",1,3,1,1,SOTON/O.Q. 3101315,13.775,NA,S,NA,NA,NA,1,0,0,0.6511678
+3,1,"Peacock, Mrs. Benjamin (Edith Nile)",1,26,0,2,SOTON/O.Q. 3101315,13.775,NA,S,NA,NA,NA,1,0,0,0.6604952
+3,0,"Pearce, Mr. Ernest",0,NA,0,0,343271,7,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Pedersen, Mr. Olaf",0,NA,0,0,345498,7.775,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Peduzzi, Mr. Joseph",0,NA,0,0,A/5 2817,8.05,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Pekoniemi, Mr. Edvard",0,21,0,0,STON/O 2. 3101294,7.925,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Peltomaki, Mr. Nikolai Johannes",0,25,0,0,STON/O 2. 3101291,7.925,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Perkin, Mr. John Henry",0,22,0,0,A/5 21174,7.25,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Persson, Mr. Ernst Ulrik",0,25,1,0,347083,7.775,NA,S,15,NA,NA,1,0,0,0.1016947
+3,0,"Peter, Master. Michael J",0,NA,1,1,2668,22.3583,NA,C,C,NA,NA,0,1,0,0.1110221
+3,1,"Peter, Miss. Anna",1,NA,1,1,2668,22.3583,F E69,C,D,NA,NA,0,1,0,0.6511678
+3,1,"Peter, Mrs. Catherine (Catherine Rizk)",1,NA,0,2,2668,22.3583,NA,C,D,NA,NA,0,1,0,0.6604952
+3,1,"Peters, Miss. Katie",1,NA,0,0,330935,8.1375,NA,Q,NA,NA,NA,0,0,1,0.5521883
+3,0,"Petersen, Mr. Marius",0,24,0,0,342441,8.05,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,1,"Petranec, Miss. Matilda",1,28,0,0,349245,7.8958,NA,S,NA,NA,NA,1,0,0,0.6418404
+3,0,"Petroff, Mr. Nedelio",0,19,0,0,349212,7.8958,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Petroff, Mr. Pastcho (\Pentcho\\)\""""",0,NA,0,0,349215,7.8958,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Petterson, Mr. Johan Emil",0,25,1,0,347076,7.775,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,1,"Pettersson, Miss. Ellen Natalia",1,18,0,0,347087,7.775,NA,S,NA,NA,NA,1,0,0,0.6418404
+3,0,"Pickard, Mr. Berk (Berk Trembisky)",0,32,0,0,SOTON/O.Q. 392078,8.05,E10,S,9,NA,NA,1,0,0,0.1016947
+3,0,"Plotcharsky, Mr. Vasil",0,NA,0,0,349227,7.8958,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Pokrnic, Mr. Mate",0,17,0,0,315095,8.6625,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Pokrnic, Mr. Tome",0,24,0,0,315092,8.6625,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Radeff, Mr. Alexander",0,NA,0,0,349223,7.8958,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,1,"Rasmussen, Mrs. (Lena Jacobsen Solvang)",1,NA,0,0,65305,8.1125,NA,S,NA,NA,NA,1,0,0,0.6418404
+3,0,"Razi, Mr. Raihed",0,NA,0,0,2629,7.2292,NA,C,NA,NA,NA,0,1,0,0.1016947
+3,0,"Reed, Mr. James George",0,NA,0,0,362316,7.25,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Rekic, Mr. Tido",0,38,0,0,349249,7.8958,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Reynolds, Mr. Harold J",0,21,0,0,342684,8.05,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Rice, Master. Albert",0,10,4,1,382652,29.125,NA,Q,NA,NA,NA,0,0,1,0.0213701
+3,0,"Rice, Master. Arthur",0,4,4,1,382652,29.125,NA,Q,NA,NA,NA,0,0,1,0.0213701
+3,0,"Rice, Master. Eric",0,7,4,1,382652,29.125,NA,Q,NA,NA,NA,0,0,1,0.0213701
+3,0,"Rice, Master. Eugene",0,2,4,1,382652,29.125,NA,Q,NA,NA,NA,0,0,1,0.0213701
+3,0,"Rice, Master. George Hugh",0,8,4,1,382652,29.125,NA,Q,NA,NA,NA,0,0,1,0.0213701
+3,1,"Rice, Mrs. William (Margaret Norton)",1,39,0,5,382652,29.125,NA,Q,NA,327,NA,0,0,1,0.5988254
+3,1,"Riihivouri, Miss. Susanna Juhantytar \Sanni\\\""""",1,22,0,0,3101295,39.6875,NA,S,NA,NA,NA,1,0,0,0.6418404
+3,0,"Rintamaki, Mr. Matti",0,35,0,0,STON/O 2. 3101273,7.125,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,1,"Riordan, Miss. Johanna \Hannah\\\""""",1,NA,0,0,334915,7.7208,NA,Q,13,NA,NA,0,0,1,0.5521883
+3,0,"Risien, Mr. Samuel Beard",0,NA,0,0,364498,14.5,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,1,"Risien, Mrs. Samuel (Emma)",1,NA,0,0,364498,14.5,NA,S,NA,NA,NA,1,0,0,0.6418404
+3,0,"Robins, Mr. Alexander A",0,50,1,0,A/5. 3337,14.5,NA,S,NA,119,NA,1,0,0,0.1016947
+3,1,"Robins, Mrs. Alexander A (Grace Charity Laury)",1,47,1,0,A/5. 3337,14.5,NA,S,NA,7,NA,1,0,0,0.6418404
+3,0,"Rogers, Mr. William John",0,NA,0,0,S.C./A.4. 23567,8.05,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Rommetvedt, Mr. Knud Paust",0,NA,0,0,312993,7.775,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,1,"Rosblom, Miss. Salli Helena",1,2,1,1,370129,20.2125,NA,S,NA,NA,NA,1,0,0,0.6511678
+3,0,"Rosblom, Mr. Viktor Richard",0,18,1,1,370129,20.2125,NA,S,NA,NA,NA,1,0,0,0.1110221
+3,1,"Rosblom, Mrs. Viktor (Helena Wilhelmina)",1,41,0,2,370129,20.2125,NA,S,NA,NA,NA,1,0,0,0.6604952
+3,1,"Roth, Miss. Sarah A",1,NA,0,0,342712,8.05,NA,S,C,NA,NA,1,0,0,0.6418404
+3,0,"Rouse, Mr. Richard Henry",0,50,0,0,A/5 3594,8.05,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Rush, Mr. Alfred George John",0,16,0,0,A/4. 20589,8.05,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Ryan, Mr. Edward",0,NA,0,0,383162,7.75,NA,Q,14,NA,NA,0,0,1,0.0120427
+3,0,"Ryan, Mr. Patrick",0,NA,0,0,371110,24.15,NA,Q,NA,NA,NA,0,0,1,0.0120427
+3,0,"Saad, Mr. Amin",0,NA,0,0,2671,7.2292,NA,C,NA,NA,NA,0,1,0,0.1016947
+3,0,"Saad, Mr. Khalil",0,25,0,0,2672,7.225,NA,C,NA,NA,NA,0,1,0,0.1016947
+3,0,"Saade, Mr. Jean Nassr",0,NA,0,0,2676,7.225,NA,C,NA,NA,NA,0,1,0,0.1016947
+3,0,"Sadlier, Mr. Matthew",0,NA,0,0,367655,7.7292,NA,Q,NA,NA,NA,0,0,1,0.0120427
+3,0,"Sadowitz, Mr. Harry",0,NA,0,0,LP 1588,7.575,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Saether, Mr. Simon Sivertsen",0,38.5,0,0,SOTON/O.Q. 3101262,7.25,NA,S,NA,32,NA,1,0,0,0.1016947
+3,0,"Sage, Master. Thomas Henry",0,NA,8,2,CA. 2343,69.55,NA,S,NA,NA,NA,1,0,0,0.1203495
+3,0,"Sage, Master. William Henry",0,14.5,8,2,CA. 2343,69.55,NA,S,NA,67,NA,1,0,0,0.1203495
+3,1,"Sage, Miss. Ada",1,NA,8,2,CA. 2343,69.55,NA,S,NA,NA,NA,1,0,0,0.6604952
+3,1,"Sage, Miss. Constance Gladys",1,NA,8,2,CA. 2343,69.55,NA,S,NA,NA,NA,1,0,0,0.6604952
+3,1,"Sage, Miss. Dorothy Edith \Dolly\\\""""",1,NA,8,2,CA. 2343,69.55,NA,S,NA,NA,NA,1,0,0,0.6604952
+3,1,"Sage, Miss. Stella Anna",1,NA,8,2,CA. 2343,69.55,NA,S,NA,NA,NA,1,0,0,0.6604952
+3,0,"Sage, Mr. Douglas Bullen",0,NA,8,2,CA. 2343,69.55,NA,S,NA,NA,NA,1,0,0,0.1203495
+3,0,"Sage, Mr. Frederick",0,NA,8,2,CA. 2343,69.55,NA,S,NA,NA,NA,1,0,0,0.1203495
+3,0,"Sage, Mr. George John Jr",0,NA,8,2,CA. 2343,69.55,NA,S,NA,NA,NA,1,0,0,0.1203495
+3,0,"Sage, Mr. John George",0,NA,1,9,CA. 2343,69.55,NA,S,NA,NA,NA,1,0,0,0.1856414
+3,1,"Sage, Mrs. John (Annie Bullen)",1,NA,1,9,CA. 2343,69.55,NA,S,NA,NA,NA,1,0,0,0.725787
+3,0,"Salander, Mr. Karl Johan",0,24,0,0,7266,9.325,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,1,"Salkjelsvik, Miss. Anna Kristine",1,21,0,0,343120,7.65,NA,S,C,NA,NA,1,0,0,0.6418404
+3,0,"Salonen, Mr. Johan Werner",0,39,0,0,3101296,7.925,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Samaan, Mr. Elias",0,NA,2,0,2662,21.6792,NA,C,NA,NA,NA,0,1,0,0.1016947
+3,0,"Samaan, Mr. Hanna",0,NA,2,0,2662,21.6792,NA,C,NA,NA,NA,0,1,0,0.1016947
+3,0,"Samaan, Mr. Youssef",0,NA,2,0,2662,21.6792,NA,C,NA,NA,NA,0,1,0,0.1016947
+3,1,"Sandstrom, Miss. Beatrice Irene",1,1,1,1,PP 9549,16.7,G6,S,13,NA,NA,1,0,0,0.6511678
+3,1,"Sandstrom, Mrs. Hjalmar (Agnes Charlotta Bengtsson)",1,24,0,2,PP 9549,16.7,G6,S,13,NA,NA,1,0,0,0.6604952
+3,1,"Sandstrom, Miss. Marguerite Rut",1,4,1,1,PP 9549,16.7,G6,S,13,NA,NA,1,0,0,0.6511678
+3,0,"Sap, Mr. Julius",0,25,0,0,345768,9.5,NA,S,11,NA,NA,1,0,0,0.1016947
+3,0,"Saundercock, Mr. William Henry",0,20,0,0,A/5. 2151,8.05,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Sawyer, Mr. Frederick Charles",0,24.5,0,0,342826,8.05,NA,S,NA,284,NA,1,0,0,0.1016947
+3,0,"Scanlan, Mr. James",0,NA,0,0,36209,7.725,NA,Q,NA,NA,NA,0,0,1,0.0120427
+3,0,"Sdycoff, Mr. Todor",0,NA,0,0,349222,7.8958,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Shaughnessy, Mr. Patrick",0,NA,0,0,370374,7.75,NA,Q,NA,NA,NA,0,0,1,0.0120427
+3,0,"Sheerlinck, Mr. Jan Baptist",0,29,0,0,345779,9.5,NA,S,11,NA,NA,1,0,0,0.1016947
+3,0,"Shellard, Mr. Frederick William",0,NA,0,0,C.A. 6212,15.1,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,1,"Shine, Miss. Ellen Natalia",1,NA,0,0,330968,7.7792,NA,Q,NA,NA,NA,0,0,1,0.5521883
+3,0,"Shorney, Mr. Charles Joseph",0,NA,0,0,374910,8.05,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Simmons, Mr. John",0,NA,0,0,SOTON/OQ 392082,8.05,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Sirayanian, Mr. Orsen",0,22,0,0,2669,7.2292,NA,C,NA,NA,NA,0,1,0,0.1016947
+3,0,"Sirota, Mr. Maurice",0,NA,0,0,392092,8.05,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Sivic, Mr. Husein",0,40,0,0,349251,7.8958,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Sivola, Mr. Antti Wilhelm",0,21,0,0,STON/O 2. 3101280,7.925,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,1,"Sjoblom, Miss. Anna Sofia",1,18,0,0,3101265,7.4958,NA,S,16,NA,NA,1,0,0,0.6418404
+3,0,"Skoog, Master. Harald",0,4,3,2,347088,27.9,NA,S,NA,NA,NA,1,0,0,0.1203495
+3,0,"Skoog, Master. Karl Thorsten",0,10,3,2,347088,27.9,NA,S,NA,NA,NA,1,0,0,0.1203495
+3,1,"Skoog, Miss. Mabel",1,9,3,2,347088,27.9,NA,S,NA,NA,NA,1,0,0,0.6604952
+3,1,"Skoog, Miss. Margit Elizabeth",1,2,3,2,347088,27.9,NA,S,NA,NA,NA,1,0,0,0.6604952
+3,0,"Skoog, Mr. Wilhelm",0,40,1,4,347088,27.9,NA,S,NA,NA,NA,1,0,0,0.1390043
+3,1,"Skoog, Mrs. William (Anna Bernhardina Karlsson)",1,45,1,4,347088,27.9,NA,S,NA,NA,NA,1,0,0,0.67915
+3,0,"Slabenoff, Mr. Petco",0,NA,0,0,349214,7.8958,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Slocovski, Mr. Selman Francis",0,NA,0,0,SOTON/OQ 392086,8.05,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Smiljanic, Mr. Mile",0,NA,0,0,315037,8.6625,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Smith, Mr. Thomas",0,NA,0,0,384461,7.75,NA,Q,NA,NA,NA,0,0,1,0.0120427
+3,1,"Smyth, Miss. Julia",1,NA,0,0,335432,7.7333,NA,Q,13,NA,NA,0,0,1,0.5521883
+3,0,"Soholt, Mr. Peter Andreas Lauritz Andersen",0,19,0,0,348124,7.65,F G73,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Somerton, Mr. Francis William",0,30,0,0,A.5. 18509,8.05,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Spector, Mr. Woolf",0,NA,0,0,A.5. 3236,8.05,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Spinner, Mr. Henry John",0,32,0,0,STON/OQ. 369943,8.05,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Staneff, Mr. Ivan",0,NA,0,0,349208,7.8958,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Stankovic, Mr. Ivan",0,33,0,0,349239,8.6625,NA,C,NA,NA,NA,0,1,0,0.1016947
+3,1,"Stanley, Miss. Amy Zillah Elsie",1,23,0,0,CA. 2314,7.55,NA,S,C,NA,NA,1,0,0,0.6418404
+3,0,"Stanley, Mr. Edward Roland",0,21,0,0,A/4 45380,8.05,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Storey, Mr. Thomas",0,60.5,0,0,3701,NA,NA,S,NA,261,NA,1,0,0,0.1016947
+3,0,"Stoytcheff, Mr. Ilia",0,19,0,0,349205,7.8958,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,1,"Strandberg, Miss. Ida Sofia",1,22,0,0,7553,9.8375,NA,S,NA,NA,NA,1,0,0,0.6418404
+3,0,"Stranden, Mr. Juho",0,31,0,0,STON/O 2. 3101288,7.925,NA,S,9,NA,NA,1,0,0,0.1016947
+3,0,"Strilic, Mr. Ivan",0,27,0,0,315083,8.6625,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,1,"Strom, Miss. Telma Matilda",1,2,0,1,347054,10.4625,G6,S,NA,NA,NA,1,0,0,0.6511678
+3,1,"Strom, Mrs. Wilhelm (Elna Matilda Persson)",1,29,1,1,347054,10.4625,G6,S,NA,NA,NA,1,0,0,0.6511678
+3,0,"Sunderland, Mr. Victor Francis",0,16,0,0,SOTON/OQ 392089,8.05,NA,S,B,NA,NA,1,0,0,0.1016947
+3,0,"Sundman, Mr. Johan Julian",0,44,0,0,STON/O 2. 3101269,7.925,NA,S,15,NA,NA,1,0,0,0.1016947
+3,0,"Sutehall, Mr. Henry Jr",0,25,0,0,SOTON/OQ 392076,7.05,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Svensson, Mr. Johan",0,74,0,0,347060,7.775,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Svensson, Mr. Johan Cervin",0,14,0,0,7538,9.225,NA,S,13,NA,NA,1,0,0,0.1016947
+3,0,"Svensson, Mr. Olof",0,24,0,0,350035,7.7958,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Tenglin, Mr. Gunnar Isidor",0,25,0,0,350033,7.7958,NA,S,13 15,NA,NA,1,0,0,0.1016947
+3,0,"Theobald, Mr. Thomas Leonard",0,34,0,0,363294,8.05,NA,S,NA,176,NA,1,0,0,0.1016947
+3,0,"Thomas, Master. Assad Alexander",0,0.4167,0,1,2625,8.5167,NA,C,16,NA,NA,0,1,0,0.1110221
+3,0,"Thomas, Mr. Charles P",0,NA,1,0,2621,6.4375,NA,C,NA,NA,NA,0,1,0,0.1016947
+3,0,"Thomas, Mr. John",0,NA,0,0,2681,6.4375,NA,C,NA,NA,NA,0,1,0,0.1016947
+3,0,"Thomas, Mr. Tannous",0,NA,0,0,2684,7.225,NA,C,NA,NA,NA,0,1,0,0.1016947
+3,1,"Thomas, Mrs. Alexander (Thamine \Thelma\\)\""""",1,16,1,1,2625,8.5167,NA,C,14,NA,NA,0,1,0,0.6511678
+3,0,"Thomson, Mr. Alexander Morrison",0,NA,0,0,32302,8.05,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Thorneycroft, Mr. Percival",0,NA,1,0,376564,16.1,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,1,"Thorneycroft, Mrs. Percival (Florence Kate White)",1,NA,1,0,376564,16.1,NA,S,10,NA,NA,1,0,0,0.6418404
+3,0,"Tikkanen, Mr. Juho",0,32,0,0,STON/O 2. 3101293,7.925,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Tobin, Mr. Roger",0,NA,0,0,383121,7.75,F38,Q,NA,NA,NA,0,0,1,0.0120427
+3,0,"Todoroff, Mr. Lalio",0,NA,0,0,349216,7.8958,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Tomlin, Mr. Ernest Portage",0,30.5,0,0,364499,8.05,NA,S,NA,50,NA,1,0,0,0.1016947
+3,0,"Torber, Mr. Ernst William",0,44,0,0,364511,8.05,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Torfa, Mr. Assad",0,NA,0,0,2673,7.2292,NA,C,NA,NA,NA,0,1,0,0.1016947
+3,0,"Tornquist, Mr. William Henry",0,25,0,0,LINE,0,NA,S,15,NA,NA,1,0,0,0.1016947
+3,0,"Toufik, Mr. Nakli",0,NA,0,0,2641,7.2292,NA,C,NA,NA,NA,0,1,0,0.1016947
+3,0,"Touma, Master. Georges Youssef",0,7,1,1,2650,15.2458,NA,C,C,NA,NA,0,1,0,0.1110221
+3,1,"Touma, Miss. Maria Youssef",1,9,1,1,2650,15.2458,NA,C,C,NA,NA,0,1,0,0.6511678
+3,1,"Touma, Mrs. Darwis (Hanne Youssef Razi)",1,29,0,2,2650,15.2458,NA,C,C,NA,NA,0,1,0,0.6604952
+3,0,"Turcin, Mr. Stjepan",0,36,0,0,349247,7.8958,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,1,"Turja, Miss. Anna Sofia",1,18,0,0,4138,9.8417,NA,S,15,NA,NA,1,0,0,0.6418404
+3,1,"Turkula, Mrs. (Hedwig)",1,63,0,0,4134,9.5875,NA,S,15,NA,NA,1,0,0,0.6418404
+3,0,"van Billiard, Master. James William",0,NA,1,1,A/5. 851,14.5,NA,S,NA,NA,NA,1,0,0,0.1110221
+3,0,"van Billiard, Master. Walter John",0,11.5,1,1,A/5. 851,14.5,NA,S,NA,1,NA,1,0,0,0.1110221
+3,0,"van Billiard, Mr. Austin Blyler",0,40.5,0,2,A/5. 851,14.5,NA,S,NA,255,NA,1,0,0,0.1203495
+3,1,"Van Impe, Miss. Catharina",1,10,0,2,345773,24.15,NA,S,NA,NA,NA,1,0,0,0.6604952
+3,0,"Van Impe, Mr. Jean Baptiste",0,36,1,1,345773,24.15,NA,S,NA,NA,NA,1,0,0,0.1110221
+3,1,"Van Impe, Mrs. Jean Baptiste (Rosalie Paula Govaert)",1,30,1,1,345773,24.15,NA,S,NA,NA,NA,1,0,0,0.6511678
+3,0,"van Melkebeke, Mr. Philemon",0,NA,0,0,345777,9.5,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Vande Velde, Mr. Johannes Joseph",0,33,0,0,345780,9.5,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Vande Walle, Mr. Nestor Cyriel",0,28,0,0,345770,9.5,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Vanden Steen, Mr. Leo Peter",0,28,0,0,345783,9.5,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Vander Cruyssen, Mr. Victor",0,47,0,0,345765,9,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,1,"Vander Planke, Miss. Augusta Maria",1,18,2,0,345764,18,NA,S,NA,NA,NA,1,0,0,0.6418404
+3,0,"Vander Planke, Mr. Julius",0,31,3,0,345763,18,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Vander Planke, Mr. Leo Edmondus",0,16,2,0,345764,18,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,1,"Vander Planke, Mrs. Julius (Emelia Maria Vandemoortele)",1,31,1,0,345763,18,NA,S,NA,NA,NA,1,0,0,0.6418404
+3,0,"Vartanian, Mr. David",0,22,0,0,2658,7.225,NA,C,13 15,NA,NA,0,1,0,0.1016947
+3,0,"Vendel, Mr. Olof Edvin",0,20,0,0,350416,7.8542,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,1,"Vestrom, Miss. Hulda Amanda Adolfina",1,14,0,0,350406,7.8542,NA,S,NA,NA,NA,1,0,0,0.6418404
+3,0,"Vovk, Mr. Janko",0,22,0,0,349252,7.8958,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Waelens, Mr. Achille",0,22,0,0,345767,9,NA,S,NA,NA,"Antwerp, Belgium / Stanton, OH",1,0,0,0.1016947
+3,0,"Ware, Mr. Frederick",0,NA,0,0,359309,8.05,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Warren, Mr. Charles William",0,NA,0,0,C.A. 49867,7.55,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Webber, Mr. James",0,NA,0,0,SOTON/OQ 3101316,8.05,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Wenzel, Mr. Linhart",0,32.5,0,0,345775,9.5,NA,S,NA,298,NA,1,0,0,0.1016947
+3,1,"Whabee, Mrs. George Joseph (Shawneene Abi-Saab)",1,38,0,0,2688,7.2292,NA,C,C,NA,NA,0,1,0,0.6418404
+3,0,"Widegren, Mr. Carl/Charles Peter",0,51,0,0,347064,7.75,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Wiklund, Mr. Jakob Alfred",0,18,1,0,3101267,6.4958,NA,S,NA,314,NA,1,0,0,0.1016947
+3,0,"Wiklund, Mr. Karl Johan",0,21,1,0,3101266,6.4958,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,1,"Wilkes, Mrs. James (Ellen Needs)",1,47,1,0,363272,7,NA,S,NA,NA,NA,1,0,0,0.6418404
+3,0,"Willer, Mr. Aaron (\Abi Weller\\)\""""",0,NA,0,0,3410,8.7125,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Willey, Mr. Edward",0,NA,0,0,S.O./P.P. 751,7.55,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Williams, Mr. Howard Hugh \Harry\\\""""",0,NA,0,0,A/5 2466,8.05,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Williams, Mr. Leslie",0,28.5,0,0,54636,16.1,NA,S,NA,14,NA,1,0,0,0.1016947
+3,0,"Windelov, Mr. Einar",0,21,0,0,SOTON/OQ 3101317,7.25,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Wirz, Mr. Albert",0,27,0,0,315154,8.6625,NA,S,NA,131,NA,1,0,0,0.1016947
+3,0,"Wiseman, Mr. Phillippe",0,NA,0,0,A/4. 34244,7.25,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Wittevrongel, Mr. Camille",0,36,0,0,345771,9.5,NA,S,NA,NA,NA,1,0,0,0.1016947
+3,0,"Yasbeck, Mr. Antoni",0,27,1,0,2659,14.4542,NA,C,C,NA,NA,0,1,0,0.1016947
+3,1,"Yasbeck, Mrs. Antoni (Selini Alexander)",1,15,1,0,2659,14.4542,NA,C,NA,NA,NA,0,1,0,0.6418404
+3,0,"Youseff, Mr. Gerious",0,45.5,0,0,2628,7.225,NA,C,NA,312,NA,0,1,0,0.1016947
+3,0,"Yousif, Mr. Wazli",0,NA,0,0,2647,7.225,NA,C,NA,NA,NA,0,1,0,0.1016947
+3,0,"Yousseff, Mr. Gerious",0,NA,0,0,2627,14.4583,NA,C,NA,NA,NA,0,1,0,0.1016947
+3,1,"Zabour, Miss. Hileni",1,14.5,1,0,2665,14.4542,NA,C,NA,328,NA,0,1,0,0.6418404
+3,1,"Zabour, Miss. Thamine",1,NA,1,0,2665,14.4542,NA,C,NA,NA,NA,0,1,0,0.6418404
+3,0,"Zakarian, Mr. Mapriededer",0,26.5,0,0,2656,7.225,NA,C,NA,304,NA,0,1,0,0.1016947
+3,0,"Zakarian, Mr. Ortin",0,27,0,0,2670,7.225,NA,C,NA,NA,NA,0,1,0,0.1016947
+3,0,"Zimmerman, Mr. Leo",0,29,0,0,315082,7.875,NA,S,NA,NA,NA,1,0,0,0.1016947
