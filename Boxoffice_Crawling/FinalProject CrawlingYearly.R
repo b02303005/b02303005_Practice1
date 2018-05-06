@@ -20,6 +20,6 @@ for (tyear in 2013:2017){
 }
 
 BoxofficeDF <- data.frame(all_data)
-colnames(BoxofficeDF) <- c("Year","Yearly_Ranking","Title","Studio","Total_Gross","Number_of_Theaters","Open_Date_Gross","Number_of_Open_Date_Theaters","Open_Date","End_Date")
+colnames(BoxofficeDF) <- c("Year","Yearly_Ranking","Title","Studio","Total_Gross","Number_of_Theaters","Opening_Gross","Number_of_Opening_Theaters","Open_Date","End_Date")
 
 write.table(BoxofficeDF,file="/Users/Eric/Documents/R study/Final Project/BoxofficeDF.csv",row.names=FALSE,sep=",")
