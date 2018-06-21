@@ -46,14 +46,10 @@ Progect1:<br />
 <br />
 <br />
 <br />
-Week8:<br />
-鐵達尼號生還預測：<br />
-https://github.com/b02303005/b02303005_Practice1/tree/master/week_8(project_2)<br />
-HTML: https://goo.gl/Ms7qxC<br />
+Project2,3,5的投影片在組員處:<br />
 <br />
 <br />
 <br />
-Week10:<br />
 Project4(Apriori)<br />
 HTML: https://goo.gl/DfYf6J<br />
 <br />
