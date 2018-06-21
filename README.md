@@ -46,7 +46,8 @@ Progect1:<br />
 <br />
 <br />
 <br />
-Project2,3,5的投影片在組員處:<br />
+Project2,3,5:
+放在組員的Github<br />
 <br />
 <br />
 <br />
